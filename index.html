@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<!-- saved from url=(0118)https://htmlpreview.github.io/?https://github.com/AnteroTeobaldo/BCodeProyectos/blob/main/dia_novia_1_bcode/index.html -->
+<html lang="es"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><!--<base href="https://raw.githubusercontent.com/AnteroTeobaldo/BCodeProyectos/main/dia_novia_1_bcode/index.html">--><base href=".">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Mi Novia Hermosa</title>
+    <link rel="stylesheet" href="./Para Mi Novia BCode_files/styles.css">
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: #000; 
+    color: #ff9ec6; 
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.card {
+    width: 90%;
+    max-width: 500px;
+    background: rgba(0, 0, 0, 0.7); 
+    border-radius: 15px;
+    border: 1px solid #ff6b9e;
+    box-shadow: 0 0 30px rgba(255, 107, 158, 0.5);
+    padding: 25px;
+    text-align: center;
+    position: relative;
+    z-index: 10;
+    backdrop-filter: blur(5px);
+}
+
+.header {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+h1 {
+    font-size: 2rem;
+    background: linear-gradient(45deg, #ff6b9e, #ff9ec6);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 5px;
+    text-shadow: 0 0 10px rgba(255, 107, 158, 0.3);
+}
+
+.date {
+    font-size: 1rem;
+    color: #ff9ec6;
+    letter-spacing: 2px;
+}
+
+.photo-frame {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 25px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    box-shadow: 0 0 15px #ff6b9e, 
+                inset 0 0 15px #ff6b9e;
+    padding: 5px;
+    position: relative;
+    overflow: hidden;
+    animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+    from { box-shadow: 0 0 10px #ff6b9e, inset 0 0 10px #ff6b9e; }
+    to { box-shadow: 0 0 20px #ff6b9e, inset 0 0 20px #ff6b9e; }
+}
+
+.photo-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.message {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin: 0 auto 20px;
+    max-width: 90%;
+    color: #ffcce0;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.8s ease forwards;
+}
+
+@keyframes fadeInUp {
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.heart-btn {
+    background: transparent;
+    color: #ff9ec6;
+    border: 2px solid #ff6b9e;
+    padding: 12px 30px;
+    border-radius: 50px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin: 15px 0;
+    box-shadow: 0 0 15px rgba(255, 107, 158, 0.5);
+    transition: all 0.3s;
+    position: relative;
+    overflow: hidden;
+}
+
+.heart-btn:hover {
+    background: rgba(255, 107, 158, 0.2);
+    box-shadow: 0 0 25px rgba(255, 107, 158, 0.8);
+}
+
+.heart-btn::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(
+        transparent, 
+        rgba(255, 158, 198, 0.3), 
+        transparent
+    );
+    transform: rotate(45deg);
+    animation: shine 3s infinite;
+}
+
+@keyframes shine {
+    0% { left: -50%; }
+    100% { left: 150%; }
+}
+
+.signature {
+    font-family: 'Brush Script MT', cursive;
+    font-size: 1.8rem;
+    color: #ff6b9e;
+    margin-top: 20px;
+    opacity: 0;
+    animation: fadeIn 1s ease 1.5s forwards;
+    text-shadow: 0 0 10px rgba(255, 107, 158, 0.5);
+}
+
+.matrix-hearts {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.heart-matrix {
+    position: absolute;
+    color: #ff6b9e;
+    font-size: 20px;
+    animation: fall linear infinite;
+    text-shadow: 0 0 5px #ff9ec6;
+}
+
+@keyframes fall {
+    to { transform: translateY(100vh); }
+}
+</style><style>
+        @keyframes pop {
+            to { transform: scale(1) translate(2.1426806863598173px, -18.89331085448902px); }
+        }
+        @keyframes fadeOut {
+            to { opacity: 0; transform: scale(0.5) translate(17.30046453484377px, 39.58434229908808px); }
+        }
+    </style></head>
+<body>
+    <div class="matrix-hearts" id="matrixHearts"><div class="heart-matrix" style="left: 33.0993vw; animation-duration: 4.48831s; opacity: 0.745075; font-size: 17.9236px;">♥</div><div class="heart-matrix" style="left: 11.053vw; animation-duration: 3.48082s; opacity: 0.512739; font-size: 24.9914px;">💗</div><div class="heart-matrix" style="left: 12.821vw; animation-duration: 3.05607s; opacity: 0.593312; font-size: 27.932px;">💗</div><div class="heart-matrix" style="left: 77.5296vw; animation-duration: 4.04217s; opacity: 0.590049; font-size: 15.7982px;">💖</div><div class="heart-matrix" style="left: 92.331vw; animation-duration: 4.09269s; opacity: 0.729854; font-size: 28.1008px;">❤</div><div class="heart-matrix" style="left: 15.4897vw; animation-duration: 2.40727s; opacity: 0.785421; font-size: 18.0402px;">💓</div><div class="heart-matrix" style="left: 60.8261vw; animation-duration: 2.14693s; opacity: 0.602956; font-size: 25.7075px;">💗</div><div class="heart-matrix" style="left: 59.9256vw; animation-duration: 3.99545s; opacity: 0.329558; font-size: 13.6319px;">💖</div><div class="heart-matrix" style="left: 88.2483vw; animation-duration: 3.94374s; opacity: 0.62045; font-size: 25.2118px;">♥</div><div class="heart-matrix" style="left: 33.8261vw; animation-duration: 4.44389s; opacity: 0.622522; font-size: 29.9369px;">💗</div><div class="heart-matrix" style="left: 24.6169vw; animation-duration: 4.93558s; opacity: 0.327167; font-size: 20.3215px;">❤</div><div class="heart-matrix" style="left: 83.5552vw; animation-duration: 2.6509s; opacity: 0.322949; font-size: 20.6207px;">❤</div><div class="heart-matrix" style="left: 54.9696vw; animation-duration: 3.67614s; opacity: 0.790471; font-size: 29.0826px;">💖</div><div class="heart-matrix" style="left: 17.6322vw; animation-duration: 3.22906s; opacity: 0.776852; font-size: 12.4755px;">💗</div><div class="heart-matrix" style="left: 0.259711vw; animation-duration: 4.53346s; opacity: 0.593003; font-size: 18.0556px;">♥</div><div class="heart-matrix" style="left: 39.8662vw; animation-duration: 3.00603s; opacity: 0.557671; font-size: 29.5083px;">💘</div><div class="heart-matrix" style="left: 68.9247vw; animation-duration: 3.80796s; opacity: 0.453419; font-size: 16.1916px;">💗</div><div class="heart-matrix" style="left: 71.5914vw; animation-duration: 3.18299s; opacity: 0.577497; font-size: 20.2628px;">💘</div><div class="heart-matrix" style="left: 52.1532vw; animation-duration: 4.14127s; opacity: 0.622161; font-size: 15.3155px;">♥</div><div class="heart-matrix" style="left: 73.4311vw; animation-duration: 4.94036s; opacity: 0.691965; font-size: 27.3212px;">💖</div><div class="heart-matrix" style="left: 65.5723vw; animation-duration: 4.78217s; opacity: 0.415354; font-size: 17.0097px;">❤</div><div class="heart-matrix" style="left: 32.4146vw; animation-duration: 4.41881s; opacity: 0.612511; font-size: 17.0053px;">❤</div><div class="heart-matrix" style="left: 35.062vw; animation-duration: 2.11291s; opacity: 0.392437; font-size: 21.1071px;">💘</div><div class="heart-matrix" style="left: 61.2058vw; animation-duration: 2.84428s; opacity: 0.677663; font-size: 17.0897px;">💓</div><div class="heart-matrix" style="left: 34.2941vw; animation-duration: 4.59345s; opacity: 0.532796; font-size: 12.7331px;">💖</div><div class="heart-matrix" style="left: 69.7503vw; animation-duration: 4.1679s; opacity: 0.327124; font-size: 22.0642px;">💖</div><div class="heart-matrix" style="left: 31.9625vw; animation-duration: 4.3383s; opacity: 0.562071; font-size: 22.4415px;">💘</div><div class="heart-matrix" style="left: 65.9879vw; animation-duration: 3.96066s; opacity: 0.453245; font-size: 18.194px;">💘</div><div class="heart-matrix" style="left: 58.3109vw; animation-duration: 4.44589s; opacity: 0.705661; font-size: 14.915px;">💓</div><div class="heart-matrix" style="left: 32.3366vw; animation-duration: 2.02068s; opacity: 0.717142; font-size: 29.7606px;">💗</div><div class="heart-matrix" style="left: 26.0577vw; animation-duration: 3.93419s; opacity: 0.474188; font-size: 10.1859px;">💖</div><div class="heart-matrix" style="left: 6.69707vw; animation-duration: 2.36157s; opacity: 0.743111; font-size: 20.3272px;">💓</div><div class="heart-matrix" style="left: 5.31435vw; animation-duration: 4.23312s; opacity: 0.581919; font-size: 13.8915px;">💗</div><div class="heart-matrix" style="left: 7.00185vw; animation-duration: 3.79176s; opacity: 0.543905; font-size: 18.1046px;">💗</div><div class="heart-matrix" style="left: 67.986vw; animation-duration: 4.15584s; opacity: 0.369891; font-size: 11.3156px;">💘</div><div class="heart-matrix" style="left: 9.68754vw; animation-duration: 4.80713s; opacity: 0.721413; font-size: 29.8698px;">❤</div><div class="heart-matrix" style="left: 49.4858vw; animation-duration: 2.18885s; opacity: 0.549907; font-size: 17.3525px;">💘</div><div class="heart-matrix" style="left: 14.5232vw; animation-duration: 4.8636s; opacity: 0.416969; font-size: 26.2707px;">💓</div><div class="heart-matrix" style="left: 57.972vw; animation-duration: 3.07946s; opacity: 0.749874; font-size: 15.033px;">❤</div><div class="heart-matrix" style="left: 49.0711vw; animation-duration: 4.81757s; opacity: 0.768528; font-size: 25.6888px;">❤</div><div class="heart-matrix" style="left: 40.0618vw; animation-duration: 3.90623s; opacity: 0.537253; font-size: 10.9746px;">💗</div><div class="heart-matrix" style="left: 81.3145vw; animation-duration: 2.78912s; opacity: 0.595478; font-size: 23.263px;">💖</div><div class="heart-matrix" style="left: 25.7062vw; animation-duration: 4.78896s; opacity: 0.353698; font-size: 15.0267px;">💗</div><div class="heart-matrix" style="left: 19.3217vw; animation-duration: 4.13475s; opacity: 0.474579; font-size: 27.2272px;">❤</div><div class="heart-matrix" style="left: 22.4017vw; animation-duration: 4.32907s; opacity: 0.458539; font-size: 16.6228px;">💘</div><div class="heart-matrix" style="left: 51.7349vw; animation-duration: 4.55122s; opacity: 0.777335; font-size: 25.0831px;">💗</div><div class="heart-matrix" style="left: 89.4434vw; animation-duration: 2.3166s; opacity: 0.792186; font-size: 15.8043px;">❤</div><div class="heart-matrix" style="left: 44.3526vw; animation-duration: 2.93798s; opacity: 0.527471; font-size: 12.571px;">💗</div><div class="heart-matrix" style="left: 94.0093vw; animation-duration: 3.92523s; opacity: 0.498647; font-size: 18.6171px;">💓</div><div class="heart-matrix" style="left: 70.0206vw; animation-duration: 2.21183s; opacity: 0.665138; font-size: 18.9538px;">💖</div></div>
+    <div class="card">
+        <div class="header">
+            <h1>Feliz Día de la Novia Amor</h1>
+            <div class="date">1 de Agosto</div>
+        </div>
+
+        <div class="photo-frame">
+            <img src="./Para Mi Novia BCode_files/ramo.png" alt="Ramo">
+        </div>
+
+        <p class="message" style="animation-delay: 0.3s;">
+            En este día especial, quiero que sepas...
+        </p>
+
+        <p class="message" style="animation-delay: 0.6s;">
+            Eres el amor que ilumina mi vida, mi chica especial, el amor de mi vida.
+            Tu sonrisa es mi sol, tu risa mi melodía, y cada momento contigo es un regalo.
+            Te amo más de lo que las palabras pueden expresar te amo hoy mañana y siempre.
+        </p>
+
+        <button class="heart-btn" id="heartBtn">❤️ Haz clic, mi amor</button>
+
+        <p class="message" style="animation-delay: 0.9s; display: none;" id="hiddenMessage">
+            Cada latido de mi corazón lleva tu nombre.
+            Eres mi inspiración, mi alegría, y la razón por la que sonrío cada día.
+            Feliz 1 de agosto, mi vida.
+        </p>
+
+        <div class="signature">Para ti, con amor</div>
+    </div>
+
+
+<script type="text/htmlpreview" src="./Para Mi Novia BCode_files/script.js.descarga"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const matrixHearts = document.getElementById('matrixHearts');
+    const heartSymbols = ['❤', '♥', '💖', '💗', '💘', '💓'];
+    
+    function createMatrixHearts() {
+        const heart = document.createElement('div');
+        heart.className = 'heart-matrix';
+        heart.innerHTML = heartSymbols[Math.floor(Math.random() * heartSymbols.length)];
+        heart.style.left = Math.random() * 100 + 'vw';
+        heart.style.animationDuration = 2 + Math.random() * 3 + 's';
+        heart.style.opacity = Math.random() * 0.5 + 0.3;
+        heart.style.fontSize = 10 + Math.random() * 20 + 'px';
+        matrixHearts.appendChild(heart);
+        
+        setTimeout(() => {
+            heart.remove();
+        }, 5000);
+    }
+    
+    setInterval(createMatrixHearts, 100);
+    
+    const heartBtn = document.getElementById('heartBtn');
+    const hiddenMessage = document.getElementById('hiddenMessage');
+    
+    heartBtn.addEventListener('click', function() {
+        hiddenMessage.style.display = 'block';
+        for (let i = 0; i < 30; i++) {
+            setTimeout(() => {
+                const x = Math.random() * window.innerWidth;
+                const y = Math.random() * window.innerHeight;
+                createExplosion(x, y);
+            }, i * 50);
+        }
+    });
+    function createExplosion(x, y) {
+        const explosion = document.createElement('div');
+        explosion.innerHTML = heartSymbols[Math.floor(Math.random() * heartSymbols.length)];
+        explosion.style.position = 'fixed';
+        explosion.style.left = x + 'px';
+        explosion.style.top = y + 'px';
+        explosion.style.color = `hsl(${Math.random() * 30 + 330}, 100%, 70%)`;
+        explosion.style.fontSize = '25px';
+        explosion.style.zIndex = '100';
+        explosion.style.transform = 'scale(0)';
+        explosion.style.animation = `pop 0.5s forwards, fadeOut 0.5s 0.5s forwards`;
+        
+        document.body.appendChild(explosion);
+        
+        setTimeout(() => {
+            explosion.remove();
+        }, 1000);
+    }
+    
+    const style = document.createElement('style');
+    style.textContent = `
+        @keyframes pop {
+            to { transform: scale(1) translate(${Math.random() * 40 - 20}px, ${Math.random() * 40 - 20}px); }
+        }
+        @keyframes fadeOut {
+            to { opacity: 0; transform: scale(0.5) translate(${Math.random() * 100 - 50}px, ${Math.random() * 100 - 50}px); }
+        }
+    `;
+    document.head.appendChild(style);
+});
+</script></body></html>
